@@ -1,0 +1,9 @@
+Command list:
+GET {key} -> Returns a value at key in quotes.
+SET {key} {value} -> String variant, returns "OK" if successful.
+SET {key} {value1} {value2}... -> Array variant, assigns an array to a key and returns "OK" on success.
+DEL {key} -> Deletes a key, returns "OK" on success.
+PUSHBACK {key} {value1} {value2}... -> Pushes elements to the end of an array. Returns "OK" on success.
+PUSHFRONT {key} {value1} {value2} ... -> Pushes element to the beginning of an array. Returns "OK" on success.
+DROPALL -> Deletes the ENTIRE database! Be careful with this!
+PING -> Replies with PONG if the server is online.
